@@ -1,0 +1,52 @@
+<style>
+  .btn-search{
+    background-color: rgb(255, 56, 92);
+    height:3rem;
+    width: 3rem;
+    border-radius: 50%;
+    color:white;
+  }
+  .btn-search:hover{
+    background-color: rgb(255, 56, 92);
+  }
+  .search-box{
+    border-radius: 25px;
+    height: 3rem;
+    width: 70vh;
+  }
+  .search-box:hover{
+    background-color: rgb(205, 204, 204);
+  }
+</style>
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid" style="margin-left: 1rem;">
+    <a class="navbar-brand" href="/listings"><i class="fa-brands fa-airbnb fa-2xl"></i><b>airbnb</b> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!-- <a class="nav-link" aria-current="page" href="/">Home</a> -->
+        <a class="nav-link" href="/listings">Exploree</a>
+        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+      </div>
+      <div class="navbar-nav ms-auto mb-2">      
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 search-box" type="search" placeholder="Search destinations        |        Add dates        |       Add guests" aria-label="Search">
+          <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+        </form>
+      </div>
+      <div class="navbar-nav ms-auto">          <!--side logins-->
+        <a class="nav-link new" href="/listings/new">Airbnb your home</a>
+        <% if(!currUser){%>
+          <a class="nav-link login" aria-current="page" href="/signup">SignUp</a>
+          <a class="nav-link login" href="/login">Login</a>
+        <%} %>
+        <%if(currUser){%>
+          <a class="nav-link login" href="/logout">Logout</a>
+        <%}%>
+      </div>
+    </div>
+  </div>
+</nav>

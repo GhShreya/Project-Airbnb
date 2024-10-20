@@ -1,0 +1,129 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display:flex;
+  flex-direction: column;
+}
+
+.container{
+    flex:1;
+    /* width: 100vh; */
+    margin-bottom: 10rem;
+}
+
+.navbar{
+    height:6rem;
+    background-color: white;
+}
+
+.navbar-brand{
+    color:rgb(255, 56, 92);
+}
+
+.nav-link{
+    color:#222;
+}
+
+.new:hover{
+    background-color: #ebebeb;
+    border-radius: 20px;
+}
+
+.f-info{
+    bottom:0;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    height:8rem;
+    width: 100%;
+    position: sticky;
+}
+
+.f-info-socials, .f-info-links{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+}
+
+.f-info-links a{
+    color:#222;
+    text-decoration: none;  
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;  
+}
+
+/* Cards */
+.card{
+    border:none;
+    margin-bottom:2rem;
+}
+
+.card-img-top{
+    border-radius:1rem;
+    width:100%;
+    object-fit: cover;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity:0;
+    background-color:white;
+}
+
+.card-img-overlay:hover{
+    opacity:0.1;
+}
+
+.show-img{
+    height: 40vh;
+}
+
+.edit-btn{
+    background-color: rgb(255, 56, 92);
+}
+
+.btns{
+    display: flex;
+    height:2.3rem;
+}
+
+.show-card{
+    padding-left:0;
+    padding-right:0;
+}
+
+.delete-review{
+    display:flex;
+    justify-content: space-between;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+/* Map */
+#map{
+    height:350px;
+    width:80vh;
+    border-radius: 5px;
+}
